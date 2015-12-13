@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Stop. Bin time.</h1>
+    <p>Find out when that bin is out for collection!</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-3 col-md-6">
+      <p>Select your street to get the schedule:</p>
+      <ul>
+        <li ng-repeat="location in locations">
+          <a href="locations/{{location.street}}">{{location.street}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> <!-- /container -->        
