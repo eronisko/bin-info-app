@@ -54,6 +54,13 @@
         street: "Another gatve",
         next_collection: "Friday, 18th December",
       },
+      {
+        street: "Vilnius gatve",
+        next_collection: "Friday, 18th December",
+      },
+      {
+        street: "AdForm gatve",
+        next_collection: "Friday, 18th December",
+      },
     ];
-
 })();
