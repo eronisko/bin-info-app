@@ -41,26 +41,5 @@
       }
     }
 
-    var locationsData = [
-      {
-        street: "Something gatve",
-        next_collection: "Wednesday, 16th December",
-      },
-      {
-        street: "Švyturio gatve",
-        next_collection: "Thursday, 17th December",
-      },
-      {
-        street: "Another gatve",
-        next_collection: "Friday, 18th December",
-      },
-      {
-        street: "Vilnius gatve",
-        next_collection: "Friday, 18th December",
-      },
-      {
-        street: "AdForm gatve",
-        next_collection: "Friday, 18th December",
-      },
-    ];
+    var locationsData = locationDataAll;
 })();
