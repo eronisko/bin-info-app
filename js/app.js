@@ -51,6 +51,14 @@
         return $filter('filter')(input, expression);
       }
     }])
+
+    .constant("moment", moment)
+    .filter('humanizedDate', function(moment) {
+      return function(inputDate) {
+        return moment(inputDate, "YYYY-MM-DD").fromNow();
+      }
+    })
+
     ;
 
     function findLocationByStreet(street) {
