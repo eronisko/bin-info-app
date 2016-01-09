@@ -2,6 +2,7 @@
   <div class="container">
     <h1>Stop. Bin time.</h1>
     <p>Find out when that bin is out for collection!</p>
+    {{ 'Sòme strÏng with Âccénts' | latinize }}
   </div>
 </div>
 
@@ -11,7 +12,9 @@
       <p>Enter street name to get the schedule:</p>
       <input class="form-control" type="search" placeholder="e.g. Švyturio gatve" ng-model="query">
       <div id="locations-search-results" class="list-group">
-        <a href="#/locations/{{location.street}}" class="list-group-item" ng-repeat="location in vm.locations | filter:query | orderBy:'street'">
+        <a
+          href="#/locations/{{location.street}}"
+          class="list-group-item" ng-repeat="location in vm.locations | filterByStreet:query | orderBy:'street | latinize' | limitTo: 10">
           {{location.street}}
         </a>
       </div>
